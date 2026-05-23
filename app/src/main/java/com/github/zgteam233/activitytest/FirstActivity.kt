@@ -16,7 +16,8 @@ class FirstActivity : BaseActivity() {
         setContentView(binding.root)
 
         binding.button1.setOnClickListener {
-            val intent = Intent(this, SecondActivity::class.java)
+            val intent = Intent("com.github.zgteam233.activitytest.ACTION_START")
+            intent.addCategory("com.github.zgteam233.activitytest.MY_CATEGORY")
             startActivity(intent)
         }
 
@@ -31,8 +32,7 @@ class FirstActivity : BaseActivity() {
         when (item.itemId) {
             R.id.add_item -> Toast.makeText(this, "You clicked Add",
                 Toast.LENGTH_SHORT).show()
-            R.id.remove_item -> Toast.makeText(this, "You clicked Remove",
-                Toast.LENGTH_SHORT).show()
+            R.id.remove_item -> finish()
         }
         return true
     }

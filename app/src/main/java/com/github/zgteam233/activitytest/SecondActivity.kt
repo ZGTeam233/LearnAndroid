@@ -10,5 +10,9 @@ class SecondActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         binding = SecondLayoutBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.button2.setOnClickListener {
+
+        }
     }
 }
