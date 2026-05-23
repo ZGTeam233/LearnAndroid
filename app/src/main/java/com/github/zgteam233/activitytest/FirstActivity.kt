@@ -16,11 +16,12 @@ class FirstActivity : BaseActivity() {
         setContentView(binding.root)
 
         binding.button1.setOnClickListener {
-            val intent = Intent("com.github.zgteam233.activitytest.ACTION_START")
-            intent.addCategory("com.github.zgteam233.activitytest.MY_CATEGORY")
+            val data = "Hello SecondActivity"
+            val intent = Intent(this, SecondActivity::class.java).apply {
+                putExtra("extra_data", data)
+            }
             startActivity(intent)
         }
-
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
