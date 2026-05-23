@@ -1,0 +1,104 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# ==========================================
+# 📦 Built application files
+# ==========================================
+*.apk
+*.ap_
+*.aab
+
+# ==========================================
+# ⚙️ Generated & Compiled files
+# ==========================================
+*.dex
+*.class
+bin/
+gen/
+out/
+release/
+
+# ==========================================
+# 🐘 Gradle
+# ==========================================
+.gradle/
+build/
+*/build/
+
+# ⚠️ 注意：gradle/wrapper/ 目录建议保留（含 gradle-wrapper.jar 和 .properties）
+# 它保证团队使用统一的 Gradle 版本。除非你明确知道自己在做什么，否则不要忽略它。
+
+# ==========================================
+# 💡 IntelliJ IDEA / Android Studio
+# ==========================================
+.idea/
+misc.xml
+deploymentTargetDropDown.xml
+render.experimental.xml
+workspace.xml
+tasks.xml
+libraries/
+gradle.xml
+assetWizardSettings.xml
+dictionaries
+projectSettings.xml
+
+# ==========================================
+# 🔐 Sensitive & Local Config
+# ==========================================
+*.jks
+*.keystore
+google-services.json
+crashlytics-build.properties
+secrets/
+.env
+
+# ==========================================
+# 🛠️ Android Studio & Tooling Cache
+# ==========================================
+.captures/
+.navigation/
+.android/
+.externalNativeBuild/
+cmake/
+lint/intermediates/
+lint/generated/
+lint/outputs/
+lint/tmp/
+lint/lint-results.xml
+
+# ==========================================
+# 🐍 Kotlin Specific
+# ==========================================
+*.kotlin_module
+.kotlinc/
+.kotlin/
+*/.kotlin/
+
+# ==========================================
+# ️ OS & Editor Junk
+# ==========================================
+Thumbs.db
+*.swp
+*.swo
+*~
+*.log
+
+# ==========================================
+# 📦 NDK / C++ (如有 native 代码)
+# ==========================================
+obj/
+.cxx/
