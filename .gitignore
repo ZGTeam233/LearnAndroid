@@ -15,19 +15,15 @@
 local.properties
 
 # ==========================================
-# 📦 Built application files
+# 📦 Built & Generated
 # ==========================================
 *.apk
 *.ap_
 *.aab
-
-# ==========================================
-# ⚙️ Generated & Compiled files
-# ==========================================
 *.dex
 *.class
-bin/
-gen/
+build/
+*/build/
 out/
 release/
 
@@ -35,70 +31,58 @@ release/
 # 🐘 Gradle
 # ==========================================
 .gradle/
-build/
-*/build/
-
-# ⚠️ 注意：gradle/wrapper/ 目录建议保留（含 gradle-wrapper.jar 和 .properties）
-# 它保证团队使用统一的 Gradle 版本。除非你明确知道自己在做什么，否则不要忽略它。
+# ✅ 保留 gradle/wrapper/ 以锁定 Gradle 版本
 
 # ==========================================
 # 💡 IntelliJ IDEA / Android Studio
 # ==========================================
-.idea/
-misc.xml
-deploymentTargetDropDown.xml
-render.experimental.xml
-workspace.xml
-tasks.xml
-libraries/
-gradle.xml
-assetWizardSettings.xml
-dictionaries
-projectSettings.xml
+
+# ❌ 忽略：纯个人偏好/本地状态
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/usage.statistics.xml
+.idea/deploymentTargetDropDown.xml
+.idea/shelf/
+.idea/disabledPlugins.txt
+.idea/navEditor.xml
+.idea/migrations.xml
+.idea/render.experimental.xml
+
+# ❌ 忽略：可能含本地路径
+.idea/misc.xml
+.idea/compiler.xml
+.idea/gradle.xml
+
+# ✅ 保留：有助于代码一致性的配置（练习项目推荐提交）
+!.idea/codeStyles/
+!.idea/inspectionProfiles/
+!.idea/kotlinc.xml
+!.idea/vcs.xml
+!.idea/copyright/
+
+# ✅ 可选保留：如果你希望同步模块/运行配置
+# !.idea/modules.xml
+# !.idea/runConfigurations/
 
 # ==========================================
-# 🔐 Sensitive & Local Config
+# 🔐 Sensitive
 # ==========================================
 *.jks
 *.keystore
 google-services.json
-crashlytics-build.properties
 secrets/
 .env
 
 # ==========================================
-# 🛠️ Android Studio & Tooling Cache
-# ==========================================
-.captures/
-.navigation/
-.android/
-.externalNativeBuild/
-cmake/
-lint/intermediates/
-lint/generated/
-lint/outputs/
-lint/tmp/
-lint/lint-results.xml
-
-# ==========================================
-# 🐍 Kotlin Specific
+# 🐍 Kotlin
 # ==========================================
 *.kotlin_module
 .kotlinc/
-.kotlin/
-*/.kotlin/
 
 # ==========================================
-# ️ OS & Editor Junk
+# 🗑️ OS & Editor Junk
 # ==========================================
 Thumbs.db
 *.swp
 *.swo
-*~
 *.log
-
-# ==========================================
-# 📦 NDK / C++ (如有 native 代码)
-# ==========================================
-obj/
-.cxx/
