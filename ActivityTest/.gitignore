@@ -1,0 +1,88 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# ==========================================
+# 📦 Built & Generated
+# ==========================================
+*.apk
+*.ap_
+*.aab
+*.dex
+*.class
+build/
+*/build/
+out/
+release/
+
+# ==========================================
+# 🐘 Gradle
+# ==========================================
+.gradle/
+# ✅ 保留 gradle/wrapper/ 以锁定 Gradle 版本
+
+# ==========================================
+# 💡 IntelliJ IDEA / Android Studio
+# ==========================================
+
+# ❌ 忽略：纯个人偏好/本地状态
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/usage.statistics.xml
+.idea/deploymentTargetDropDown.xml
+.idea/shelf/
+.idea/disabledPlugins.txt
+.idea/navEditor.xml
+.idea/migrations.xml
+.idea/render.experimental.xml
+
+# ❌ 忽略：可能含本地路径
+.idea/misc.xml
+.idea/compiler.xml
+.idea/gradle.xml
+
+# ✅ 保留：有助于代码一致性的配置（练习项目推荐提交）
+!.idea/codeStyles/
+!.idea/inspectionProfiles/
+!.idea/kotlinc.xml
+!.idea/vcs.xml
+!.idea/copyright/
+
+# ✅ 可选保留：如果你希望同步模块/运行配置
+# !.idea/modules.xml
+# !.idea/runConfigurations/
+
+# ==========================================
+# 🔐 Sensitive
+# ==========================================
+*.jks
+*.keystore
+google-services.json
+secrets/
+.env
+
+# ==========================================
+# 🐍 Kotlin
+# ==========================================
+*.kotlin_module
+.kotlinc/
+
+# ==========================================
+# 🗑️ OS & Editor Junk
+# ==========================================
+Thumbs.db
+*.swp
+*.swo
+*.log
